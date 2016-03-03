@@ -19,7 +19,7 @@
     "lint": "eslint . --ext .js --ext .jsx",
     "start": "node local-cli/cli.js start webpack.config.js",
     "demo": "node local-cli/cli.js bundle webpack.config.js",
-    "prepublish": "babel ./Libraries --out-dir ./lib --stage 1",
+    "prepublish": "babel ./Libraries --out-dir ./lib --stage 1 ",
     "postpublish": "rm -rf ./lib"
   },
   "devDependencies": {
@@ -39,6 +39,7 @@
     "webpack-merge": "0.1.1"
   },
   "peerDependencies": {
+    "react-native": "^0.20.0",
     "react": "~0.14.0",
     "react-dom": "~0.14.0"
   },

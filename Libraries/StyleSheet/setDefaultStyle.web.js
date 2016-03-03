@@ -12,10 +12,8 @@ function appendSytle({
 }) {
 
   var docEl = document.documentElement;
-  var styleEl = document.createElement('style');
-  docEl.firstElementChild.appendChild(styleEl);
+  var styleEl = document.querySelector('style');
   var rem = docEl.clientWidth / reference;
-
   var boxStyle = `
   box-sizing: border-box;
   display: -webkit-box;
